@@ -1,0 +1,3 @@
+Questions
+1. What are the types of Entity Attribute?
+2. Make an ERD of School Attendance System and also write SQL Schema
