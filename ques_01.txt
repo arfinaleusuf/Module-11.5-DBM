@@ -1,0 +1,59 @@
+1. Simple (Atomic) Attribute
+
+    যে Attribute আর ছোট অংশে ভাগ করা যায় না।
+
+    উদাহরণ:
+
+    Student_ID
+    Age
+    Gender
+
+2. Composite Attribute
+
+    যে Attribute একাধিক Sub-attribute নিয়ে গঠিত।
+
+    উদাহরণ:
+
+    Name → First_Name, Last_Name
+    Address → House_No, Street, City, Country
+
+3. Single-Valued Attribute
+
+    একটি Entity-এর জন্য যার মাত্র একটি মান থাকে।
+
+    উদাহরণ:
+
+    Date_of_Birth
+    Blood_Group
+
+    একজন ব্যক্তির সাধারণত একটি Date of Birth থাকে।
+
+4. Multi-Valued Attribute
+
+    একটি Entity-এর জন্য একাধিক মান থাকতে পারে।
+
+    উদাহরণ:
+
+    Phone_Number
+    Email_Address
+    Skills
+
+    একজন শিক্ষার্থীর একাধিক ফোন নম্বর থাকতে পারে।
+
+5. Derived Attribute
+
+    যে Attribute অন্য Attribute থেকে গণনা করা যায়।
+
+    উদাহরণ:
+
+    Age (Date_of_Birth থেকে বের করা যায়)
+    Total_Marks
+
+6. Stored Attribute
+
+    যে Attribute সরাসরি Database-এ সংরক্ষণ করা হয় এবং Derived Attribute বের করতে ব্যবহৃত হয়।
+
+    উদাহরণ:
+
+    Date_of_Birth (এটি Stored Attribute)
+    Age (Derived Attribute)
