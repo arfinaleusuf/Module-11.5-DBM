@@ -1,11 +1,11 @@
 CREATE TABLE Class (
-    ClassID INT PRIMARY KEY,
+    ClassID INT AUTO_INCREMENT PRIMARY KEY,
     ClassName VARCHAR(50),
     Section VARCHAR(10)
 );
 
 CREATE TABLE Student (
-    StudentID INT PRIMARY KEY,
+    StudentID INT AUTO_INCREMENT PRIMARY KEY,
     Name VARCHAR(100),
     RollNo INT UNIQUE,
     Gender VARCHAR(10),
@@ -14,14 +14,14 @@ CREATE TABLE Student (
         REFERENCES Class(ClassID)
 );
 
-CREATE TABLE Teacher(
+CREATE TABLE AUTO_INCREMENT Teacher(
     TeacherID INT PRIMARY KEY,
     TeacherName VARCHAR(50),
     Subject VARCHAR(20)
 );
 
 CREATE TABLE Attendance(
-    AttendanceId INT PRIMARY KEY,
+    AttendanceId INT AUTO_INCREMENT PRIMARY KEY,
     StudentId INT,
     TeacherID INT,
     AttendancedDate DATE,
