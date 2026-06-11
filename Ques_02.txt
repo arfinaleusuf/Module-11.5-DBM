@@ -3,3 +3,13 @@ CREATE TABLE Class (
     ClassName VARCHAR(50),
     Section VARCHAR(10)
 );
+
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    RollNo INT UNIQUE,
+    Gender VARCHAR(10),
+    ClassID INT,
+    FOREIGN KEY (ClassID)
+        REFERENCES Class(ClassID)
+);
