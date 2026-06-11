@@ -13,3 +13,9 @@ CREATE TABLE Student (
     FOREIGN KEY (ClassID)
         REFERENCES Class(ClassID)
 );
+
+CREATE TABLE Teacher(
+    TeacherID INT PRIMARY KEY,
+    TeacherName VARCHAR(50),
+    Subject VARCHAR(20)
+);
