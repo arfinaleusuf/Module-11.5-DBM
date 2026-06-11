@@ -1,0 +1,5 @@
+CREATE TABLE Class (
+    ClassID INT PRIMARY KEY,
+    ClassName VARCHAR(50),
+    Section VARCHAR(10)
+);
