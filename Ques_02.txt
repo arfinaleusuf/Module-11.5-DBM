@@ -19,3 +19,13 @@ CREATE TABLE Teacher(
     TeacherName VARCHAR(50),
     Subject VARCHAR(20)
 );
+
+CREATE TABLE Attendance(
+    AttendanceId INT PRIMARY KEY,
+    StudentId INT,
+    TeacherID INT,
+    AttendancedDate DATE,
+    Status VARCHAR(10),
+    FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
+    FOREIGN KEY (TeacherID) REFERENCES Teacher(TeacherID)
+);
